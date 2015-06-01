@@ -1,0 +1,143 @@
+{
+  "name": "path",
+  "main": "./lib/path",
+  "version": "0.4.1",
+  "private": true,
+  "description": "shortcuts for inserting path strings.",
+  "activationEvents": [
+    "path:insert-relative-to-me",
+    "path:insert-full-path",
+    "path:pull-up",
+    "path:insert-relative-to"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weskinner/path"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "humanize-plus": "~1.4.2",
+    "underscore-plus": "~1.0.4",
+    "fs-plus": "~2.0.1"
+  },
+  "readme": "# path package\n\nshortcuts for working with path strings.\n\n###Features\n- **Insert Relative to Me**: inserts the path of a project file you select\nusing the fuzzy finder relative to the current file. `alt-cmd-r`\n- **Insert Relative to ...**: inserts the path of a project file you select\n relative another file or directory you select.  For example, if you select\n `/site/www/js/api/lib/beanCounter.js` and then `www/js`, the path `js/api/lib/beanCounter`\n will be inserted. Useful for js and css includes in web apps. `alt-cmd-t`\n- **Insert Full Path**: inserts the full path of a file you select. `alt-cmd-i`\n- **Pull Path Up**: pulls the current selection up a directory. `/path/to/file.txt`\nbecomes `/path/file.txt`. `alt-cmd-u`\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/weskinner/path/issues"
+  },
+  "homepage": "https://github.com/weskinner/path",
+  "_id": "path@0.4.1",
+  "_shasum": "24022c7c36e1f8bf78c1a3cb659f9d20db4e99ec",
+  "_resolved": "file:../d-115429-47893-221syv/package.tgz",
+  "_from": "../d-115429-47893-221syv/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "fs-plus",
+        "version": "2.0.4",
+        "path": "node_modules/fs-plus/lib/fs-plus.js"
+      },
+      {
+        "name": "async",
+        "version": "0.2.10",
+        "path": "node_modules/fs-plus/node_modules/async/lib/async.js"
+      },
+      {
+        "name": "mkdirp",
+        "version": "0.3.5",
+        "path": "node_modules/fs-plus/node_modules/mkdirp/index.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.2.8",
+        "path": "node_modules/fs-plus/node_modules/rimraf/rimraf.js"
+      },
+      {
+        "name": "humanize-plus",
+        "version": "1.4.2",
+        "path": "node_modules/humanize-plus/public/src/humanize.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.0.6",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.5.2",
+        "path": "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/load-paths-handler.coffee",
+        "lib/path-finder-view.coffee",
+        "lib/path-loader.coffee",
+        "lib/path-selector-view.coffee",
+        "lib/path.coffee"
+      ],
+      ".js": [
+        "node_modules/fs-plus/lib/fs-plus.js",
+        "node_modules/fs-plus/node_modules/async/lib/async.js",
+        "node_modules/fs-plus/node_modules/mkdirp/examples/pow.js",
+        "node_modules/fs-plus/node_modules/mkdirp/index.js",
+        "node_modules/fs-plus/node_modules/rimraf/bin.js",
+        "node_modules/fs-plus/node_modules/rimraf/rimraf.js",
+        "node_modules/humanize-plus/public/src/humanize.js",
+        "node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore-min.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      ],
+      ".json": [
+        "node_modules/fs-plus/node_modules/async/component.json",
+        "node_modules/fs-plus/node_modules/async/package.json",
+        "node_modules/fs-plus/node_modules/mkdirp/package.json",
+        "node_modules/fs-plus/node_modules/rimraf/package.json",
+        "node_modules/fs-plus/package.json",
+        "node_modules/humanize-plus/package.json",
+        "node_modules/underscore-plus/node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "humanize-plus": "~1.4.2",
+          "underscore-plus": "~1.0.4",
+          "fs-plus": "~2.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/fs-plus/lib",
+          "node_modules/fs-plus"
+        ],
+        "dependencies": {
+          "underscore-plus": "1.x",
+          "mkdirp": "~0.3.5",
+          "rimraf": "~2.2.2",
+          "async": "~0.2.9"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.5.2"
+        }
+      }
+    ]
+  }
+}

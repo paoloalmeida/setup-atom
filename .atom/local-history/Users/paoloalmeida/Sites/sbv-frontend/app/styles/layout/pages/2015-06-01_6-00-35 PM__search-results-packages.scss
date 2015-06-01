@@ -1,0 +1,73 @@
+/*
+---
+title: Search Results Tickets' page style
+name: tickets-page-style
+category: layout
+---
+
+## Style of the Search Packages page
+
+*/
+
+.package-steps{
+	display:block;
+	float:right;
+
+	li{
+		display:inline-block;
+		margin-right:10px;
+		cursor:pointer;
+		p{
+			font-size:19px;
+			.bullet-step{
+				@include border-radius(20px);
+				padding:2px 7px;
+				background: #989898;
+				width:20px;
+				height:20px;
+				display:inline-block;
+				color:#fff;
+				font-weight:normal;
+				font-size:13px;
+			}
+
+			&.current{
+				color:#000;
+				font-weight:bold;
+				.bullet-step{
+					background: #58c06e;
+				}
+			}
+		}
+	}
+}
+
+.title-choose{
+	display:inline-block;
+	color:#000;
+	font-size:19px;
+	font-weight:bold;
+	float:left;
+	padding:2px 0;
+	margin-left:40px;
+}
+
+.wrap-packages{
+	width:980px;
+	display:block;
+	margin:0 auto;
+	padding:0 20px;
+}
+.txt-choose-packages{
+
+}
+.txt-selected-flights{
+	display:inline-block;
+	color:#000;
+	line-height:130%;
+	float:left;
+	span{
+		font-size:18px;
+		display:block;
+	}
+}

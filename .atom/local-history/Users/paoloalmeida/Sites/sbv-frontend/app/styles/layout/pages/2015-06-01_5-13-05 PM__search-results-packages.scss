@@ -1,0 +1,21 @@
+/*
+---
+title: Search Results Tickets' page style
+name: tickets-page-style
+category: layout
+---
+
+## Style of the Search Packages page
+
+*/
+
+.package-steps{	
+	.bullet-step{
+		@include border-radius(15px);
+		padding:5px;
+		background: #fc0;
+		width:15px;
+		height:15px;
+		display:block;
+	}
+}

@@ -1,0 +1,1442 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Busca Passagens | Super Bonus Viagens</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Social: Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta property="twitter:image:src" content="">
+	<!-- /Social: Twitter -->
+
+	<!-- Social: Facebook / Open Graph -->
+	<meta property="fb:admins" content="" />
+	<meta property="og:url" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="article:author" content="" />
+	<meta property="article:publisher" content="" />
+	<meta property="article:published_time" content="" />
+	<meta property="article:tag" content="">
+	<!-- /Social: Facebook / Open Graph -->
+
+	<!-- build:css styles/vendor.css -->
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" />
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="bower_components/bootstrap-star-rating/css/star-rating.min.css" />
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="bower_components/bootstrap-checkbox-x/css/checkbox-x.min.css" />
+	<link rel="stylesheet" href="bower_components/dw-bxslider-4/dist/jquery.bxslider.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+		<div class="wrap row">
+			<!-- logo block -->
+			<section class="logo col-md-4">
+				<h1>
+					<a href="http://www.santanderesfera.com.br">
+						<img alt="Santander esfera logo" src="images/santander-esfera-logo.png">
+					</a>
+				</h1>
+				<figure>
+					<a href="https://esfera.brasilct.com">
+						<img alt="Superbonus logo" src="images/superbonus-logo.png">
+					</a>
+				</figure>
+			</section>
+			<!-- logo block -->
+
+			<!-- nav block -->
+			<section class="login col-md-8">
+				<div class="bonus-links">
+					<i class="fa fa-check-circle"></i>
+					<h4>Consultar seu extrato de bônus</h4>
+					<ul>
+						<li><a href="#">Cadastre-se</a></li>
+						<li><a href="#">Esqueci a senha</a></li>
+					</ul>
+				</div>
+				<form action="" class="login-top col-md-8">
+					<input type="text">
+					<input type="text">
+					<input type="submit" value="OK">
+				</form>
+			</section>
+			<nav class="main-menu">
+				<ul>
+					<li><a href="1">O que é</a></li>
+					<li><a href="2">Promoções</a></li>
+					<li class="sub-menu-container">
+						<a href="3" class="btn-gray">SuperBônus</a>
+						<ul class="sub-menu">
+							<li>
+								<a href="login.jsp?destination=extract">Extrato de Bônus</a>
+							</li>
+							<li>
+								<a href="https://esfera.brasilct.com">Troque seus Bônus</a>
+							</li>
+							<li>
+								<a href="http://respostas.santanderesfera.com.br/?gclid=COvTyp7D774CFSYV7Aod9CsApg">Sobre o Programa</a>
+							</li>
+							<li>
+								<a href="http://respostas.santanderesfera.com.br/regulamento">Regulamento</a>
+							</li>
+							<li>
+								<a href="http://www.santanderesfera.com.br/BonusEmDobro">Bônus em Dobro</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="4">Benefícios Cartão Santander</a></li>
+					<li><a href="5">Blog Esfera</a></li>
+				</ul>
+			</nav>
+			<!-- /nav block -->
+		</div>
+	</header>
+	<!-- /header -->
+
+	<div class="clearfix"></div>
+
+	<!-- breadcrumbs -->
+	<section class="breadcrumbs">
+		<div class="wrap">
+			<p>Você está em:</p>
+			<ul class="links-breadcrumbs">
+				<li>
+					<a href="">Esfera</a>
+				</li>
+				<li>
+					<a href="">SuperBônus</a>
+				</li>
+				<li>
+					<a href="" class="active">Passagens</a>
+				</li>
+			</ul>
+			<div class="pull-right">
+				<a href="" class="link-contact">Fale Conosco</a> |
+				<span class="phone-header">Televendas: 11 3504-0433   21 2169-8835 </span>
+				<div class="clearfix"></div>
+				<span class="sub-text">Seg a Sáb, 9h às 21h - Dom 14h às 20h</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	<!-- /breadcrumbs -->
+
+	<div class="clearfix"></div>
+
+	<!-- search-container -->
+	<section class="search-container tickets search-container-tickets">
+		<div class="pattern"></div>
+		<div class="wrap">
+			<!-- current search -->
+			<div class="wrap" id="search-going">
+				<section class="current-search">
+					<div class="container-current-search">
+						<div class="locales-hotels">
+							<p>
+								<span>Hotéis em São Carlos - Brasil</span>
+							</p>
+						</div>
+						<div class="checkin-date">
+							<p>
+								23 Dez
+								<span>entrada</span>
+							</p>
+						</div>
+						<div class="checkin-date">
+							<p>
+								24 Dez
+								<span>saida</span>
+							</p>
+						</div>
+						<div class="count-nights-rooms">
+							<p>
+								1
+								<span>noite</span>
+							</p>
+						</div>
+						<div class="count-nights-rooms">
+							<p>
+								1
+								<span>quarto</span>
+							</p>
+						</div>
+						<i class="icon-l-arrow-right"></i>
+						<a class="bt-redefine-search">
+							redefinir
+							<span>busca</span>
+						</a>
+					</div>
+
+					<div class="clearfix"></div>
+
+					<!-- nav filters -->
+					<nav class="nav-filters">
+						<ul>
+							<li><p>Filtros:</p></li>
+							<li class="item-bonus">
+								<a href="">Bônus</a>
+								<div class="box-hover">
+									<h3>Bônus</h3>
+									<p>Filtrar por quantidade de Bônus</p>
+									<div id="slider-bonus"></div>
+									<input type="text" id="amount" readonly>
+									<div class="clearfix"></div>
+									<input type="submit" class="btn btn-red btn-sm center-block" value="Atualizar">
+								</div>
+							</li>
+							<li class="item-hotel-classification">
+								<a href="">Classificação do Hotel</a>
+								<div class="box-hover">
+									<h3>Horário</h3>
+									<p>Classificar por estrelas</p>
+									<input type="checkbox" data-toggle="checkbox-x" data-three-state="false" data-size="sm" id="">
+									<label for="">
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+									</label>
+									<div class="clearfix"></div>
+									<input type="checkbox" data-toggle="checkbox-x" data-three-state="false" data-size="sm" id="">
+									<label for="">
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+									</label>
+									<div class="clearfix"></div>
+									<input type="checkbox" data-toggle="checkbox-x" data-three-state="false" data-size="sm" id="">
+									<label for="">
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+									</label>
+									<div class="clearfix"></div>
+									<input type="checkbox" data-toggle="checkbox-x" data-three-state="false" data-size="sm" id="">
+									<label for="">
+										<i class="icon-star"></i>
+										<i class="icon-star"></i>
+									</label>
+									<div class="clearfix"></div>
+									<input type="checkbox" data-toggle="checkbox-x" data-three-state="false" data-size="sm" id="">
+									<label for="">
+										<i class="icon-star"></i>
+									</label>
+									<input type="submit" class="btn btn-red btn-sm center-block" value="Atualizar">
+								</div>
+							</li>
+							<li class="item-scale">
+								<a href="">Nome do Hotel</a>
+								<div class="box-hover">
+									<h3>Nome do Hotel</h3>
+									<p>Encontre o nome do hotel desejado</p>
+									<input type="text" class="input-lg input-name-hotel">
+									<div class="clearfix"></div>
+									<input type="submit" class="btn btn-red btn-sm center-block" value="Pesquisar">
+								</div>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</nav>
+					<!-- /nav filters -->
+					<div class="clearfix"></div>
+				</section>
+				<div class="clearfix"></div>
+			</div>
+			<!-- /current search-->
+
+			<!-- search -->
+			<section role="tabpanel" class="tab-search">
+				<!-- nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#tab-hotels" aria-controls="tab-hotels" role="tab" data-toggle="tab" class="tab-hotels">
+							Hotéis
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							Passagens
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+							Pacotes
+						</a>
+					</li>
+					<li>
+						<a href="cruzeiros.html">
+							Cruzeiros
+						</a>
+					</li>
+				</ul>
+				<!-- /nav tabs -->
+
+				<!-- tab forms -->
+				<div class="tab-content">
+					<!-- hoteis panel -->
+					<div role="tabpanel" class="tab-pane active" id="tab-hotels">
+						<form action="" class="hotel-form">
+							<section class="col-md-12 form-group-lg">
+								<!-- destiny -->
+								<input type="text" class="input-lg col-md-12 search-autocomplete" placeholder="Destino" name="dest" id="destiny-hotels" required>
+								<!-- /destiny -->
+							</section>
+							<section class="col-md-12 form-group-lg">
+								<!-- date -->
+								<div class="date-container">
+									<i class="icon-calendar"></i>
+									<input type="text" class="input-lg datepicker going-date col-md-2" placeholder="Entrada" name="dest-entrada" required>
+									<input type="text" class="input-lg datepicker return-date col-md-2" placeholder="Saida" name="dest-saida" required>
+									<div class="night-count">
+										<span class="night">Noites</span>
+										<span class="count">0</span>
+									</div>
+									<div id="datepicker"></div>
+								</div>
+								<!-- /date -->
+								<!-- rate -->
+								<div class="col-md-4 form-group-lg box-rating">
+									<span class="title-rating">Estrelas:</span> <input class="rating" data-min="0" data-max="5" data-step="1" data-size="xs" data-show-clear="false" data-show-caption="false" data-symbol="&#xf005;" data-glyphicon="false" data-rating-class="rating-fa">
+								</div>
+								<!-- /rate -->
+							</section>
+							<section class="col-md-12 form-group-lg">
+								<!-- select bedrooms -->
+								<i class="icon-bedroom"></i>
+								<div class="c-select select-bedroom col-md-2">
+									<select name="" class="col-md-12 input-lg" >
+										<option value="1">Quartos 1</option>
+										<option value="2">Quartos 2</option>
+										<option value="3">Quartos 3</option>
+										<option value="4">Quartos 4</option>
+										<option value="5">Quartos 5</option>
+									</select>
+								</div>
+								<!-- /select bedrooms -->
+							</section>
+							<!-- list of bedrooms -->
+							<section class="col-md-12 form-group-lg list-bedroom">
+								<!-- bedroom 1 -->
+								<article class="bh-1">
+									<div class="col-md-5 mp-0">
+										<h5>Quarto 1</h5>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">Adultos 1</option>
+												<option value="1">Adultos 2</option>
+												<option value="1">Adultos 3</option>
+												<option value="1">Adultos 4</option>
+												<option value="1">Adultos 5</option>
+											</select>
+										</div>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg select-child">
+												<option value="0">Crianças 0</option>
+												<option value="1">Crianças 1</option>
+												<option value="2">Crianças 2</option>
+												<option value="3">Crianças 3</option>
+												<option value="4">Crianças 4</option>
+												<option value="5">Crianças 5</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-7 mp-0 child-age-hotel">
+										<h5>Idade das crianças</h5>
+										<div class="c-select col-md-age hotel-child-1">
+											<select name="" class="col-md-12 input-lg" placeholder="Quartos">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-2">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-3">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-4">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+									</div>
+								</article>
+								<!-- /bedroom 1 -->
+
+								<div class="clearfix"></div>
+
+								<!-- bedroom 2 -->
+								<article class="bh-2">
+									<div class="col-md-5 mp-0">
+										<h5>Quarto 2</h5>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">Adultos 1</option>
+												<option value="1">Adultos 2</option>
+												<option value="1">Adultos 3</option>
+												<option value="1">Adultos 4</option>
+												<option value="1">Adultos 5</option>
+											</select>
+										</div>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg select-child">
+												<option value="0">Crianças 0</option>
+												<option value="1">Crianças 1</option>
+												<option value="2">Crianças 2</option>
+												<option value="3">Crianças 3</option>
+												<option value="4">Crianças 4</option>
+												<option value="5">Crianças 5</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-7 mp-0 child-age-hotel">
+										<h5>Idade das crianças</h5>
+										<div class="c-select col-md-age hotel-child-1">
+											<select name="" class="col-md-12 input-lg" placeholder="Quartos">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-2">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-3">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-4">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+									</div>
+								</article>
+								<!-- /bedroom 2 -->
+
+								<div class="clearfix"></div>
+
+								<!-- bedroom 3 -->
+								<article class="bh-3">
+									<div class="col-md-5 mp-0">
+										<h5>Quarto 3</h5>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">Adultos 1</option>
+												<option value="1">Adultos 2</option>
+												<option value="1">Adultos 3</option>
+												<option value="1">Adultos 4</option>
+												<option value="1">Adultos 5</option>
+											</select>
+										</div>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg select-child">
+												<option value="0">Crianças 0</option>
+												<option value="1">Crianças 1</option>
+												<option value="2">Crianças 2</option>
+												<option value="3">Crianças 3</option>
+												<option value="4">Crianças 4</option>
+												<option value="5">Crianças 5</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-7 mp-0 child-age-hotel">
+										<h5>Idade das crianças</h5>
+										<div class="c-select col-md-age hotel-child-1">
+											<select name="" class="col-md-12 input-lg" placeholder="Quartos">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-2">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-3">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-4">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+									</div>
+								</article>
+								<!-- /bedroom 3 -->
+
+								<div class="clearfix"></div>
+
+								<!-- bedroom 4 -->
+								<article class="bh-4">
+									<div class="col-md-5 mp-0">
+										<h5>Quarto 4</h5>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">Adultos 1</option>
+												<option value="1">Adultos 2</option>
+												<option value="1">Adultos 3</option>
+												<option value="1">Adultos 4</option>
+												<option value="1">Adultos 5</option>
+											</select>
+										</div>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg select-child">
+												<option value="0">Crianças 0</option>
+												<option value="1">Crianças 1</option>
+												<option value="2">Crianças 2</option>
+												<option value="3">Crianças 3</option>
+												<option value="4">Crianças 4</option>
+												<option value="5">Crianças 5</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-7 mp-0 child-age-hotel">
+										<h5>Idade das crianças</h5>
+										<div class="c-select col-md-age hotel-child-1">
+											<select name="" class="col-md-12 input-lg" placeholder="Quartos">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-2">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-3">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-4">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+									</div>
+								</article>
+								<!-- /bedroom 4 -->
+
+								<div class="clearfix"></div>
+
+								<!-- bedroom 5 -->
+								<article class="bh-5">
+									<div class="col-md-5 mp-0">
+										<h5>Quarto 5</h5>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">Adultos 1</option>
+												<option value="1">Adultos 2</option>
+												<option value="1">Adultos 3</option>
+												<option value="1">Adultos 4</option>
+												<option value="1">Adultos 5</option>
+											</select>
+										</div>
+										<div class="c-select col-md-5">
+											<select name="" class="col-md-12 input-lg select-child">
+												<option value="0">Crianças 0</option>
+												<option value="1">Crianças 1</option>
+												<option value="2">Crianças 2</option>
+												<option value="3">Crianças 3</option>
+												<option value="4">Crianças 4</option>
+												<option value="5">Crianças 5</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-7 mp-0 child-age-hotel">
+										<h5>Idade das crianças</h5>
+										<div class="c-select col-md-age hotel-child-1">
+											<select name="" class="col-md-12 input-lg" placeholder="Quartos">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-2">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-3">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-4">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+										<div class="c-select col-md-age hotel-child-5">
+											<select name="" class="col-md-12 input-lg">
+												<option value="1">01</option>
+												<option value="1">02</option>
+												<option value="1">03</option>
+												<option value="1">04</option>
+												<option value="1">05</option>
+											</select>
+										</div>
+									</div>
+								</article>
+							</section>
+							<!-- /list of bedrooms -->
+							<div class="clearfix"></div>
+
+							<div class="col-md-12">
+								<input type="submit" value="Buscar" class="btn-lg-red">
+							</div>
+
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<!-- /hoteis panel -->
+				</div>
+				<!-- /tab forms -->
+			</section>
+			<!-- /search -->
+		</div>
+		<div class="clearfix"></div>
+	</section>
+	<!-- /search-container -->
+
+	<div class="clearfix"></div>
+
+	<!-- main content -->
+	<section class="main-content">
+		<!-- selected hotel -->
+		<section class="item-selected">
+			<div class="wrap-flights">
+				<p class="txt-selected-flights">
+					<span>Montar</span>
+					pacote
+				</p>
+				<i class="icon-s-arrow-right"></i>
+				<p class="txt-name-hotel">
+					Primeiro escolha o hotel
+				</p>
+				<ul class="package-steps">
+					<li>
+						<p>
+							<span class="bullet-step">1</span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class="bullet-step">1</span>
+						</p>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="wrap-flights">
+				<p class="txt-selected-flights">
+					<span>Hotel</span>
+					Selecionado
+				</p>
+				<i class="icon-s-arrow-right"></i>
+				<p class="txt-name-hotel">
+					Hotel Bellagio
+				</p>
+				<div class="mini-description-hotel">
+					<p>(Quarto Casal Standard)</p>
+				</div>
+				<div class="price-per-adult">
+					<p><strong>Preço por adulto</strong></p>
+					<p><b class="total-price">67.000 bônus</b></p>
+					<p class="tip-use-money">
+						<i class="icon-dollar"></i>
+						Você também pode complementar <br>
+						seu pagamento usando dinheiro
+					</p>
+				</div>
+				<div class="i-want">
+					<input type="button" value="EU QUERO" class="bt-i-want">
+					<span>*Taxas não inclusas</span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<hr class="dotted">
+		</section>
+		<!-- /selected hotel -->
+
+		<div class="clearfix"></div>
+
+		<!-- wrap-map -->
+		<div class="wrap">
+			<div id="map-image">
+				<button id="openMap">RESULTADOS NO MAPA</button>
+				<img width="940" height="70" src="http://maps.googleapis.com/maps/api/staticmap?center=Sao+Paulo,Brasil&zoom=8&scale=2&size=640x47&maptype=roadmap&format=jpg&visual_refresh=true" alt="">
+			</div>
+			<div id="map-canvas"></div>
+		</div>
+		<!-- /wrap-map -->
+
+		<div class="clearfix"></div>
+
+		<div class="wrap">
+			<!-- container flights -->
+			<section class="container-list-hotels">
+				<!-- legend -->
+				<div class="legend-list-hotels">
+					<span class="hotel-name">Ordenar por hotel</span>
+					<span class="hotel-stars">Ordenar por estrelas</span>
+					<span class="price">Ordenar por preço</span>
+				</div>
+				<!-- /legend -->
+				<h4>Resultado da busca</h4>
+
+				<div class="clearfix"></div>
+
+				<!-- list hotels  -->
+				<ul class="list-hotels">
+					<li class="item-hotel" data-id="1" data-hotel-name="Hotel Bellagio" data-main-price="35.000" data-main-room="Quarto Casal Standard">
+						<!-- <div class="check"></div> -->
+						<picture class="logo-hotel">
+							<img src="images/thumb-hotel.jpg" alt="Hotel">
+						</picture>
+						<div class="hotel-info">
+							<div class="title-hotel">
+								<h4>Hotel Bellagio</h4>
+								<div class="rating-hotel">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+								</div>
+								<div class="clearfix"></div>
+								<p class="h-local"><b>Las Vegas (TheStrip) - <a href="#">Ver Mapa</a></b></p>
+							</div>
+							<div class="rating-trip">
+								<!-- TODO: Colocar rating do trip advisor -->
+								<img src="images/thumb-temporary-trip.jpg" alt="">
+							</div>
+							<a href="#" class="link-bedroom-hotel"><i class="icon-green-bed"></i>Quarto Casal Standard</a>
+							<p class="text-mini-detail">Cerca de 1.000 fontes dançam com música e luz em frente a este hotel em estilo europeu, localizado ao longo da Strip...</p>
+							<ul class="tabs-hotel-info">
+								<li><a class="tab-overview">Visão completa</a></li>
+								<li><a class="tab-services">Serviços & Comodidades</a></li>
+								<li><a class="tab-photos">Fotos</a></li>
+								<li><a class="tab-maps">Mapa</a></li>
+								<li><a class="tab-bedrooms">Quartos</a></li>
+							</ul>
+						</div>
+						<div class="hotel-price">
+							<div class="content-price">
+								<p><b>Preço por adulto</b></p>
+								<p class="price-value"><strong>36.000 bônus</strong></p>
+								<p>*Taxas não inclusas</p>
+								<p class="bedroom-selected">
+									<span class="check "></span><a href="#" class="link-select-bedroom">Quarto Casal Standard</a>
+								</p>
+								<a class="btn btn-default btn-lg bt-change-bedroom btn-red">ESCOLHER QUARTO</a>
+							</div>
+						</div>
+						<!-- hotel details -->
+						<div class="hotel-details">
+							<!-- overview -->
+							<section class="bedroom-overview">
+								<h4>Visão Completa</h4>
+								<div class="wrap-container">
+									<div class="col-md-8">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51579.046233134075!2d-115.16245710687522!3d36.101034667430554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c430cb5147bd%3A0x82f2c7c5d9d10d84!2sBellagio+Hotel+and+Casino!5e0!3m2!1spt-BR!2sbr!4v1432145231130" width="575" height="155" frameborder="0" style="border:0"></iframe>
+
+										<h4>Descrição</h4>
+										<p>The Hostel Paulista fica no coração de São Paulo, a uma curta caminhada de Faculdade Cásper Líbero e Museu de Arte de São Paulo. Este albergue fica...</p>
+
+										<h4>Serviços</h4>
+										<a class="see-all-services">Ver todos serviços</a>
+									</div>
+									<div class="col-md-4 container-thumbs-bedroom">
+										<h4 class="link-all-photos">Fotos do hotel</h4>
+										<ul class="list-thumb-photos-bedroom">
+											<li>
+												<a><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+											<li>
+												<a><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+											<li>
+												<a><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+											<li>
+												<a><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							<!-- /overview -->
+							<!-- services -->
+							<section class="bedroom-services">
+								<h4>Serviços e Comodidades</h4>
+								<div class="wrap-container">
+									<h5>Descrição</h5>
+									<p>Localização do estabelecimento Bellagio, em Las Vegas (The Strip), fica a apenas alguns minutos de Crystals at City Center e perto de Universidade de Nevada-Las Vegas. Este resort 5 estrelas fica bem perto de Sands Expo Convention Center e Fashion Show Mall.Quartos Sinta-se em casa em um de nossos 3,933 quartos com ar-condicionado, dock para iPod e minibares. Seu quarto inclui uma cama pillowtop. Sua diversão está garantida com filmes pagos, e o acesso à internet com e sem fio está disponível por uma sobretaxa. Banheiro privativo com banheiras e chuveiros separados apresenta pias duplas e televisões.Instalações recreativas, de spa e premium Agende uma visita ao spa de serviço completo. Antes de sair para uma noite no cassino, relaxe na 5 piscinas externas. O estabelecimento também oferece loja de presentes/banca de jornal, cabeleireiro e lojas no local.Alimentação Este resort oferece um restaurante, que serve café da manhã, almoço e jantar. O jantar também é oferecido em uma cafeteria, e serviço de quarto 24 horas está disponível. Relaxe com sua bebida favorita em um bar/lounge ou um bar ao lado da piscina.Comodidades para negócios e outras comodidades As comodidades presentes incluem um business center, serviço de limousine/transfer executivo e equipamento audiovisual. Este resort oferece instalações para eventos, como um centro de conferências, salas de conferências/reuniões e sala de reuniões para grupos pequenos. Estacionamento grátis sem manobrista está disponível no local.</p>
+
+									<h5>Facilidades</h5>
+									<ul class="itens-facilities">
+										<li>Poolside bar</li>
+										<li>Sauna</li>
+										<li>Event catering</li>
+										<li>Elevator/lift</li>
+										<li>Full-service health spa</li>
+										<li>Business Center</li>
+									</ul>
+									<ul class="itens-facilities">
+										<li>Poolside bar</li>
+										<li>Sauna</li>
+										<li>Event catering</li>
+										<li>Elevator/lift</li>
+										<li>Full-service health spa</li>
+										<li>Business Center</li>
+									</ul>
+								</div>
+							</section>
+							<!-- /services -->
+							<!-- photos -->
+							<section class="bedroom-photos">
+								<h4>Fotos</h4>
+								<div class="thumb-gallery bx-pager">
+									<a data-slide-index="0" href="">
+										<img src="images/hotels/ex-thumb-1.jpg" />
+									</a>
+									<a data-slide-index="1" href="">
+										<img src="images/hotels/ex-thumb-2.jpg" />
+									</a>
+								</div>
+								<div class="bedroom-gallery">
+									<ul class="bxslider">
+										<li><img src="images/hotels/ex-image-1.jpg" /></li>
+										<li><img src="images/hotels/ex-image-2.jpg" /></li>
+									</ul>
+								</div>
+							</section>
+							<div class="clearfix"></div>
+							<!-- /photos -->
+							<!-- bedrooms -->
+							<section class="bedroom-select">
+								<h4>Quartos</h4>
+								<div class="wrap-container">
+									<ul class="list-item-bedrooms">
+										<li data-room="Quarto Casal Standard 1" data-price="6.000">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 1</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 2" data-price="7.500">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 2</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 3" data-price="8.500">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 3</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 4" data-price="9.500">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 4</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 5" data-price="10.500">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 5</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+										</li>
+										<li data-room="Quarto Casal Standard 6" data-price="11.500">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 6</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- /bedrooms -->
+							<!-- map -->
+							<section class="bedroom-map">
+								<h4>Mapa</h4>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51579.046233134075!2d-115.16245710687522!3d36.101034667430554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c430cb5147bd%3A0x82f2c7c5d9d10d84!2sBellagio+Hotel+and+Casino!5e0!3m2!1spt-BR!2sbr!4v1432145231130" width="902" height="368" frameborder="0" style="border:0"></iframe>
+							</section>
+							<!-- /map -->
+							<a class="link-hide-window">Ocultar Janela</a>
+							<div class="clearfix"></div>
+						</div>
+						<!-- /hotel details -->
+					</li>
+					<li class="item-hotel" data-id="2" data-hotel-name="Caesars Palace" data-main-price="48.000" data-main-room="Quarto Casal Premium">
+						<!-- <div class="check"></div> -->
+						<picture class="logo-hotel">
+							<img src="images/thumb-hotel-2.jpg" alt="Hotel">
+						</picture>
+						<div class="hotel-info">
+							<div class="title-hotel">
+								<h4>Caesars Palace</h4>
+								<div class="rating-hotel">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+								</div>
+								<div class="clearfix"></div>
+								<p class="h-local"><b>Las Vegas (TheStrip) - <a href="#">Ver Mapa</a></b></p>
+							</div>
+							<div class="rating-trip">
+								<!-- TODO: Colocar rating do trip advisor -->
+								<img src="images/thumb-temporary-trip.jpg" alt="">
+							</div>
+							<a href="#" class="link-bedroom-hotel"><i class="icon-green-bed"></i>Quarto Casal Standard</a>
+							<p class="text-mini-detail">From the moment you walk through the doors of Caesars Palace, you?ll understand why this iconic Las Vegas hotel sets the standard for opulent details, impeccable service and lavish Las Vegas accommodations.</p>
+							<ul class="tabs-hotel-info">
+								<li><a class="tab-overview">Visão completa</a></li>
+								<li><a class="tab-services">Serviços & Comodidades</a></li>
+								<li><a class="tab-photos">Fotos</a></li>
+								<li><a class="tab-maps">Mapa</a></li>
+								<li><a class="tab-bedrooms">Quartos</a></li>
+							</ul>
+						</div>
+						<div class="hotel-price">
+							<div class="content-price">
+								<p><b>Preço por adulto</b></p>
+								<p><strong>48.000 bônus</strong></p>
+								<p>*Taxas não inclusas</p>
+								<p class="bedroom-selected">
+									<span class="check "></span><a href="#" class="link-select-bedroom">Quarto Casal Standard</a>
+								</p>
+								<a class="btn btn-default btn-lg bt-change-bedroom btn-red">ESCOLHER QUARTO</a>
+							</div>
+						</div>
+						<!-- hotel details -->
+						<div class="hotel-details">
+							<!-- overview -->
+							<section class="bedroom-overview">
+								<h4>Visão Completa</h4>
+								<div class="wrap-container">
+									<div class="col-md-8">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51579.046233134075!2d-115.16245710687522!3d36.101034667430554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c430cb5147bd%3A0x82f2c7c5d9d10d84!2sBellagio+Hotel+and+Casino!5e0!3m2!1spt-BR!2sbr!4v1432145231130" width="575" height="155" frameborder="0" style="border:0"></iframe>
+										<h4>Descrição</h4>
+										<p>The Hostel Paulista fica no coração de São Paulo, a uma curta caminhada de Faculdade Cásper Líbero e Museu de Arte de São Paulo. Este albergue fica...</p>
+										<h4>Serviços</h4>
+										<a href="#">Ver todos serviços</p>
+									</div>
+									<div class="col-md-4 container-thumbs-bedroom">
+										<h4>Fotos do hotel</h4>
+										<ul class="list-thumb-photos-bedroom">
+											<li>
+												<a href="#"><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+											<li>
+												<a href="#"><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+											<li>
+												<a href="#"><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+											<li>
+												<a href="#"><img src="images/ex-thumb-bedroom.jpg" alt=""></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							<!-- /overview -->
+							<!-- services -->
+							<section class="bedroom-services">
+								<h4>Serviços e Comodidades</h4>
+								<div class="wrap-container">
+									<h5>Descrição</h5>
+									<p>Localização do estabelecimento Bellagio, em Las Vegas (The Strip), fica a apenas alguns minutos de Crystals at City Center e perto de Universidade de Nevada-Las Vegas. Este resort 5 estrelas fica bem perto de Sands Expo Convention Center e Fashion Show Mall.Quartos Sinta-se em casa em um de nossos 3,933 quartos com ar-condicionado, dock para iPod e minibares. Seu quarto inclui uma cama pillowtop. Sua diversão está garantida com filmes pagos, e o acesso à internet com e sem fio está disponível por uma sobretaxa. Banheiro privativo com banheiras e chuveiros separados apresenta pias duplas e televisões.Instalações recreativas, de spa e premium Agende uma visita ao spa de serviço completo. Antes de sair para uma noite no cassino, relaxe na 5 piscinas externas. O estabelecimento também oferece loja de presentes/banca de jornal, cabeleireiro e lojas no local.Alimentação Este resort oferece um restaurante, que serve café da manhã, almoço e jantar. O jantar também é oferecido em uma cafeteria, e serviço de quarto 24 horas está disponível. Relaxe com sua bebida favorita em um bar/lounge ou um bar ao lado da piscina.Comodidades para negócios e outras comodidades As comodidades presentes incluem um business center, serviço de limousine/transfer executivo e equipamento audiovisual. Este resort oferece instalações para eventos, como um centro de conferências, salas de conferências/reuniões e sala de reuniões para grupos pequenos. Estacionamento grátis sem manobrista está disponível no local.</p>
+
+									<h5>Facilidades</h5>
+									<ul class="itens-facilities">
+										<li>Poolside bar</li>
+										<li>Sauna</li>
+										<li>Event catering</li>
+										<li>Elevator/lift</li>
+										<li>Full-service health spa</li>
+										<li>Business Center</li>
+									</ul>
+									<ul class="itens-facilities">
+										<li>Poolside bar</li>
+										<li>Sauna</li>
+										<li>Event catering</li>
+										<li>Elevator/lift</li>
+										<li>Full-service health spa</li>
+										<li>Business Center</li>
+									</ul>
+								</div>
+							</section>
+							<!-- /services -->
+							<!-- photos -->
+							<section class="bedroom-photos">
+								<h4>Fotos</h4>
+								<div class="thumb-gallery bx-pager">
+									<a data-slide-index="0" href="">
+										<img src="images/hotels/ex-thumb-1.jpg" />
+									</a>
+									<a data-slide-index="1" href="">
+										<img src="images/hotels/ex-thumb-2.jpg" />
+									</a>
+								</div>
+								<div class="bedroom-gallery">
+									<ul class="bxslider">
+										<li><img src="images/hotels/ex-image-1.jpg" /></li>
+										<li><img src="images/hotels/ex-image-2.jpg" /></li>
+									</ul>
+								</div>
+							</section>
+							<div class="clearfix"></div>
+							<!-- /photos -->
+							<!-- bedrooms -->
+							<section class="bedroom-select">
+								<h4>Quartos</h4>
+								<div class="wrap-container">
+									<ul class="list-item-bedrooms">
+										<li data-room="Quarto Casal Standard 1" data-price="6.000">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 1</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 2" data-price="7.000">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 2</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 3" data-price="8.000">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard 3</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li data-room="Quarto Casal Standard 4" data-price="9.000">
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+
+										</li>
+										<li>
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+										</li>
+										<li>
+											<div class="check item-disabled"></div>
+											<picture class="thumb-pic-hotel">
+												<img src="images/thumb-pic-hotel.jpg" alt="Hotel">
+											</picture>
+											<div class="txt-description-bedroom">
+												<h5>Quarto Casal Standard</h5>
+												<p>Internet sem fio gratuita, Estacionamento Gratuito</p>
+											</div>
+											<div class="diaries-value">
+												<p>Diárias a partir de 6.000 Bônus</p>
+											</div>
+											<button class="btn btn-default btn-reserve">RESERVAR AGORA</button>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- /bedrooms -->
+							<!-- map -->
+							<section class="bedroom-map">
+								<h4>Mapa</h4>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51579.046233134075!2d-115.16245710687522!3d36.101034667430554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c430cb5147bd%3A0x82f2c7c5d9d10d84!2sBellagio+Hotel+and+Casino!5e0!3m2!1spt-BR!2sbr!4v1432145231130" width="902" height="368" frameborder="0" style="border:0"></iframe>
+							</section>
+							<!-- /map -->
+							<a class="link-hide-window">Ocultar Janela</a>
+							<div class="clearfix"></div>
+						</div>
+						<!-- /hotel details -->
+					</li>
+				</ul>
+				<!-- /list hotels -->
+			</section>
+			<!-- /container hotels -->
+
+			<div class="clearfix"></div>
+
+			<!-- description tripadvisor -->
+			<div class="row">
+				<p class="col-md-12 trip-partner">SuperBônus Viagens em parceria com o maior site de viagens do mundo  <a href="#"><img src="images/logo-trip.png" alt="TripAdvisor"></a></p>
+			</div>
+			<!-- /description tripadvisor -->
+
+			<div class="clearfix"></div>
+
+		</div>
+	</section>
+	<!-- main content -->
+
+	<div class="clearfix"></div>
+
+	<!-- institutional links -->
+	<nav class="institutional-links">
+		<div class="wrap">
+			<span>SuperBônus Viagens:</span>
+			<ul>
+				<li><a>Política de Privacidade</a></li>
+				<li><a>Termos de Uso</a></li>
+				<li><a>Manual do Viajante</a></li>
+				<li><a>Dúvidas Frequentes</a></li>
+				<li><a>Fale conosco</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	</nav>
+	<!-- /institutional links -->
+
+	<div class="clearfix"></div>
+
+	<!-- footer -->
+	<footer>
+		<!-- social links -->
+		<section class="social-links">
+			<div class="wrap">
+				<a class="social-facebook"><i class="fa fa-facebook"></i>Esfera no Facebook</a>
+				<a class="social-twitter"><i class="fa fa-twitter"></i>Esfera no Twitter</a>
+				<a class="arrow-top"><i class="fa fa-chevron-circle-up"></i></a>
+			</div>
+			<div class="clearfix"></div>
+		</section>
+		<!-- /social links -->
+		<section class="footer-container">
+			<div class="wrap">
+				<!-- menu map-links -->
+				<nav class="menu-footer col-md-8">
+					<h4>Conheça o Santander Esfera</h4>
+					<ul>
+                        <li><a href="/about">O que é</a></li>
+                        <li><a href="/promotions">Promoções</a></li>
+                        <li><a href="/superbonus">SuperBônus</a></li>
+                        <li><a href="/card_benefits">Benefícios Cartão Santander</a></li>
+                        <li><a href="/blog">Blog Esfera</a></li>
+                        <li><a href="/open_your_account">Abra sua conta</a></li>
+                        <li><a href="/contact">Fale Conosco</a></li>
+                        <li><a href="/questions">Perguntas e Respostas</a></li>
+                        <li><a href="/rules">Regulamento</a></li>
+                        <li><a href="/privacy">Termos de privacidade</a></li>
+                    </ul>
+				</nav>
+				<!-- /menu map-links -->
+				<!-- facebook -->
+				<section class="col-md-4">
+	                <div class="widget-facebook">
+	                        <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/SantanderEsfera" data-width="240" data-height="240" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=513721041984206&amp;color_scheme=light&amp;header=false&amp;height=240&amp;href=https%3A%2F%2Fwww.facebook.com%2FSantanderEsfera&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=240"><span style="vertical-align: bottom; width: 240px; height: 240px;"><iframe name="f102fbf84c" width="240px" height="240px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/v2.0/plugins/like_box.php?app_id=513721041984206&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df1df5f1adc%26domain%3Dvitrine.santanderesfera.com.br%26origin%3Dhttp%253A%252F%252Fvitrine.santanderesfera.com.br%252Ff24efef6ec%26relation%3Dparent.parent&amp;color_scheme=light&amp;header=false&amp;height=240&amp;href=https%3A%2F%2Fwww.facebook.com%2FSantanderEsfera&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=240" style="border: none; visibility: visible; width: 240px; height: 240px;" class=""></iframe></span></div>
+	                </div>
+	            </section>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<section class="info">
+				<div class="wrap">
+					<p>
+						Válido para cartões participantes do programa SuperBônus. Consulte informações no regulamento.
+					</p>
+				</div>
+			</section>
+
+			<section class="copyright">
+				<div class="wrap">
+					<div class="col-md-8 credits">
+						<p>Banco Santander (Brasil) S.A | www.santander.com.br</p>
+					</div>
+					<div class="col-md-4 santander-logo">
+						<a></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</section>
+		</section>
+	</footer>
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/bootstrap-star-rating/js/star-rating.min.js"></script>
+	<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+	<script src="bower_components/skrollr/src/skrollr.js"></script>
+	<script src="bower_components/bootstrap-checkbox-x/js/checkbox-x.min.js"></script>
+	<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+	<script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+	<script src="bower_components/jQuery-Mask-Plugin/dist/jquery.mask.js"></script>
+	<script src="bower_components/velocity/velocity.js"></script>
+	<script src="bower_components/velocity/velocity.ui.js"></script>
+	<script src="bower_components/dw-bxslider-4/dist/jquery.bxslider.min.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<script src="scripts/components/tabs.js"></script>
+	<script src="scripts/components/slider.js"></script>
+	<script src="scripts/components/form-elements.js"></script>
+	<script src="scripts/components/rating.js"></script>
+	<script src="bower_components/jquery-ui/ui/i18n/datepicker-pt-BR.js"></script>
+	<script src="scripts/components/datepicker.js"></script>
+	<script src="scripts/components/autocomplete.js"></script>
+	<script src="bower_components/waypoints/lib/shortcuts/sticky.min.js"></script>
+	<script src="scripts/components/menu-sticky.js"></script>
+	<script src="scripts/components/validation.js"></script>
+	<script src="scripts/components/gmaps.js"></script>
+	<script src="scripts/components/utilities.js"></script>
+	<!-- endbuild -->
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+</body>
+</html>

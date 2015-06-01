@@ -1,0 +1,30 @@
+"*":
+  editor:
+    invisibles:
+      {}
+    fontSize: 12
+    scrollPastEnd: true
+    softTabs: false
+    showIndentGuide: true
+    lineHeight: 1.7
+  core:
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    themes: [
+      "one-dark-ui"
+      "seti-monokai"
+    ]
+  linter:
+    {}
+  "exception-reporting":
+    userId: "efd29959-7c38-da40-69ac-abf3717cda96"
+  welcome:
+    showOnStartup: false
+  minimap:
+    {}
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "file-icons":
+    forceShow: true
